@@ -1,0 +1,115 @@
+                       
+                                                    -- MYSQL PROJECT 3.0--
+
+
+8. Can you define a trigger that is invoked automatically before a new row is inserted into a table?
+
+
+    MySQL BEFORE INSERT triggers are automatically fired before an insert event occurs on the table.
+   The following illustrates the basic syntax of creating a MySQL BEFORE INSERT trigger:
+
+    CREATE TRIGGER trigger_name
+    BEFORE INSERT
+    ON table_name FOR EACH ROW
+   trigger_body;
+
+    If you have multiple statements in the trigger_body, you have to use the BEGIN END block and change the default delimiter:
+    DELIMITER $$
+
+   CREATE TRIGGER trigger_name
+    BEFORE INSERT
+    ON table_name FOR EACH ROW
+     BEGIN
+    -- statements
+    END$$    
+
+    DELIMITER ;
+ 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+9  What are the different types of triggers?
+   A trigger is a stored program invoked automatically in response to an event such as insert, update, or delete that occurs in the associated table.
+   MySQL supports triggers that are invoked in response to the
+
+    INSERT, UPDATE or DELETE event.
+   AFTER INSERT activated after data is inserted into the table. 
+ 
+   AFTER UPDATE: activated after data in the table is modified. 
+ 
+   AFTER DELETE: activated after data is deleted/removed from the table. 
+ 
+   BEFORE INSERT: activated before data is inserted into the table. 
+ 
+   BEFORE UPDATE: activated before data in the table is modified. 
+ 
+    BEFORE DELETE: activated before data is deleted/removed from the table. 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  
+10  How is Metadata expressed and structured?
+    Metadata is machine understandable information about web resources or other things
+
+    A given metadata statement can be expressed in any of a variety of encodings. On the Web, these presently include HTML, XML, and RDF-XML,
+    but other encodings or bindings may emerge over time
+ 
+    Structural metadata is used for creation and maintenance of the information warehouse. It fully describes information warehouse structure and content.
+    The basic building block of structural metadata is a model that describes its data entities, their characteristics, and
+     how they are related to one another.  
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+11   #Explain RDS and AWS key management services.
+     -- RDS---
+
+    Set Up, Operate and Scale Relational Databases in the Cloud.
+   1 Application compatibility means easy installation
+
+   2 Remove inefficient and time-consuming database administrative tasks without needing to provision infrastructure or maintain software.
+
+   3 Deploy and scale the relational database engines of your choice in the cloud or on-premises.
+
+   4 Achieve high availability 
+.
+   5 Benefit from over a decade of proven operational expertise, security best practices, and innovation in databases born in the cloud.
+
+       Amazon RDS engines
+     Commercial           open sources             Cloud native
+                                                    amazon aurora
+      oracle                   mysql
+      sql servwer              maria db
+                        
+           ---  AWS---
+         
+      AWS Key Management Service (AWS KMS) is an encryption and key management web service.  
+      AWS provides the broadest selection of purpose-built databases allowing you to save, grow, and innovate faster.
+    1  Purpose Built
+    Choose from 15+ purpose-built database engines including relational, key-value, document, in-memory, graph, time series, wide column, and ledger databases.
+
+    2  Performance at Scale
+     Get relational databases that are 3-5X faster than popular alternatives, or non-relational databases that give you microsecond to sub-millisecond latency.
+
+    3 Secure & Highly Available
+     AWS databases are built for business-critical, enterprise workloads, offering high availability, reliability, and security.
+
+    4  Fully Managed
+    AWS continuously monitors your clusters to keep your workloads running with self-healing storage and automated scaling, so that you can focus on application development.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 12  What is the difference between amazon EC2 and RDS?
+																								
+    -- AMAZON RDS-- 
+
+  Amazon Relational Database  Service is a distributed relational database service provided by Amazon Web Services. Amazon RDS brings ease of setup,
+   operation, and scaling to relational databases in AWS Cloud.
+   There are several database engines supported by RDS, including MySQL, MariaDB, PostgreSQL, Oracle, and Microsoft SQL Server.
+   e type of database instance you select for each engine depends on its CPU, memory, storage, and networking requirements.
+
+  --AMAZON EC2--
+ 
+ The Elastic Compute Cloud operates within Amazon Web Services and provides scalable computing power. With Amazon EC2, we can develop and 
+ deploy applications much more quickly since we don't have to invest in any hardware.
+ 
+  We can use Amazon EC2 to launch as many or as few virtual servers as we need, in order to configure security and networking and manage the storage.
+
+
+
+                
